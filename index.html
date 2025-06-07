@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حقك تعرف</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .description {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">حقك تعرف</div>
+        <div class="subtitle">منصة المعرفة والحقوق</div>
+        
+        <div class="description">
+            مرحباً بكم في "حقك تعرف" - المنصة التي تهدف إلى تمكين المواطنين من خلال المعرفة والوعي بحقوقهم. 
+            نؤمن بأن المعرفة حق أساسي لكل فرد، ونسعى لتوفير المعلومات الموثوقة والمفيدة التي تساعد في بناء مجتمع واعٍ ومتقدم.
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <div class="feature-title">المعرفة</div>
+                <div class="feature-desc">معلومات موثوقة ومحدثة حول مختلف المواضيع المهمة</div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">⚖️</div>
+                <div class="feature-title">الحقوق</div>
+                <div class="feature-desc">دليل شامل لحقوق المواطنين وكيفية الحصول عليها</div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🤝</div>
+                <div class="feature-title">المجتمع</div>
+                <div class="feature-desc">منصة تفاعلية لتبادل الخبرات والمعرفة</div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <div class="feature-title">الشفافية</div>
+                <div class="feature-desc">الوصول إلى المعلومات بشكل واضح وشفاف</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
